@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positive Group</title>
+    <meta property="og:title" content="Positive Group" />
+    <link rel="icon" href="./public/playground_assets/logo-200w.jpeg">
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: IBM Plex Sans Condensed;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: normal;
+        line-height: 1.5;
+        color: var(--dl-color-scheme-darkblue);
+        background-color: var(--dl-color-scheme-lightgrey);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header data-role="Header" class="navigation-header">
+          <div class="navigation-max-width">
+            <img
+              alt="logo"
+              src="public/playground_assets/logo-200w.jpeg"
+              class="navigation-image"
+            />
+            <div class="navigation-nav">
+              <nav
+                class="navigation-links-nav navigation-links-root-class-name17"
+              >
+                <span class="navigation-links-text navigation-Link">
+                  <span><a href="#sobre">Sobre</a></span>
+                </span>
+                <span class="navigation-links-text1 navigation-Link">
+                  <span><a href="#produtos">Produtos</a></span>
+                </span>
+                <span class="navigation-links-text2 navigation-Link">
+                  <span><a href="#contatos">Contatos</a></span>
+                </span>
+              </nav>
+              <a
+                href="https://forms.gle/qMJzUKxHR9R4wmBb8"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="navigation-register button-primary button button-md"
+              >
+                <span>Diagnóstico</span>
+              </a>
+            </div>
+            <div data-type="BurgerMenu" class="navigation-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="navigation-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+            <div data-type="MobileMenu" class="navigation-mobile-menu">
+              <div class="navigation-nav1">
+                <div class="navigation-container">
+                  <img
+                    alt="image"
+                    src="public/playground_assets/logo-200w.jpeg" width="60px" height="60px" style="border-radius: 50%;"
+                  />
+                  <div
+                    data-type="CloseMobileMenu"
+                    class="navigation-close-mobile-menu"
+                  >
+                    <svg viewBox="0 0 1024 1024" class="navigation-icon02">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav
+                  class="navigation-links-nav navigation-links-root-class-name18"
+                >
+                  <span class="navigation-links-text navigation-Link">
+                    <span><a href="#sobre">Sobre</a></span>
+                  </span>
+                  <span class="navigation-links-text1 navigation-Link">
+                    <span><a href="#produtos">Produtos</a></span>
+                  </span>
+                  <span class="navigation-links-text2 navigation-Link">
+                    <span><a href="#contatos">Contatos</a></span>
+                  </span>
+                </nav>
+                <button
+                  class="navigation-register1 button-primary button button-md"
+                >
+                  <span><a href="https://forms.gle/qMJzUKxHR9R4wmBb8" target="_blank">Diagnóstico</a></span>
+                </button>
+              </div>
+              <div>
+                
+                <a
+                      href="https://www.instagram.com/positive.group"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link"
+                    >
+                      <svg viewBox="0 0 1024 1024" class="footer-icon">
+                        <path
+                          d="M512 92.2c136.8 0 153 0.6 206.8 3 50 2.2 77 10.6 95 17.6 23.8 9.2 41 20.4 58.8 38.2 18 18 29 35 38.4 58.8 7 18 15.4 45.2 17.6 95 2.4 54 3 70.2 3 206.8s-0.6 153-3 206.8c-2.2 50-10.6 77-17.6 95-9.2 23.8-20.4 41-38.2 58.8-18 18-35 29-58.8 38.4-18 7-45.2 15.4-95 17.6-54 2.4-70.2 3-206.8 3s-153-0.6-206.8-3c-50-2.2-77-10.6-95-17.6-23.8-9.2-41-20.4-58.8-38.2-18-18-29-35-38.4-58.8-7-18-15.4-45.2-17.6-95-2.4-54-3-70.2-3-206.8s0.6-153 3-206.8c2.2-50 10.6-77 17.6-95 9.2-23.8 20.4-41 38.2-58.8 18-18 35-29 58.8-38.4 18-7 45.2-15.4 95-17.6 53.8-2.4 70-3 206.8-3zM512 0c-139 0-156.4 0.6-211 3-54.4 2.4-91.8 11.2-124.2 23.8-33.8 13.2-62.4 30.6-90.8 59.2-28.6 28.4-46 57-59.2 90.6-12.6 32.6-21.4 69.8-23.8 124.2-2.4 54.8-3 72.2-3 211.2s0.6 156.4 3 211c2.4 54.4 11.2 91.8 23.8 124.2 13.2 33.8 30.6 62.4 59.2 90.8 28.4 28.4 57 46 90.6 59 32.6 12.6 69.8 21.4 124.2 23.8 54.6 2.4 72 3 211 3s156.4-0.6 211-3c54.4-2.4 91.8-11.2 124.2-23.8 33.6-13 62.2-30.6 90.6-59s46-57 59-90.6c12.6-32.6 21.4-69.8 23.8-124.2 2.4-54.6 3-72 3-211s-0.6-156.4-3-211c-2.4-54.4-11.2-91.8-23.8-124.2-12.6-34-30-62.6-58.6-91-28.4-28.4-57-46-90.6-59-32.6-12.6-69.8-21.4-124.2-23.8-54.8-2.6-72.2-3.2-211.2-3.2v0z"
+                        ></path>
+                        <path
+                          d="M512 249c-145.2 0-263 117.8-263 263s117.8 263 263 263 263-117.8 263-263c0-145.2-117.8-263-263-263zM512 682.6c-94.2 0-170.6-76.4-170.6-170.6s76.4-170.6 170.6-170.6c94.2 0 170.6 76.4 170.6 170.6s-76.4 170.6-170.6 170.6z"
+                        ></path>
+                        <path
+                          d="M846.8 238.6c0 33.91-27.49 61.4-61.4 61.4s-61.4-27.49-61.4-61.4c0-33.91 27.49-61.4 61.4-61.4s61.4 27.49 61.4 61.4z"
+                        ></path>
+                      </svg>
+                    </a>
+                <a
+                      href="https://wa.me/558698219142"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link1"
+                    >
+                      <svg viewBox="0 0 1024 1024" class="footer-icon4">
+                        <path
+                          d="M873 148.8c-95.8-96-223.2-148.8-359-148.8-279.6 0-507.2 227.6-507.2 507.4 0 89.4 23.4 176.8 67.8 253.6l-72 263 269-70.6c74.2 40.4 157.6 61.8 242.4 61.8h0.2c0 0 0 0 0 0 279.6 0 507.4-227.6 507.4-507.4 0-135.6-52.8-263-148.6-359zM514.2 929.6v0c-75.8 0-150-20.4-214.8-58.8l-15.4-9.2-159.6 41.8 42.6-155.6-10-16c-42.4-67-64.6-144.6-64.6-224.4 0-232.6 189.2-421.8 422-421.8 112.6 0 218.6 44 298.2 123.6 79.6 79.8 123.4 185.6 123.4 298.4-0.2 232.8-189.4 422-421.8 422zM745.4 613.6c-12.6-6.4-75-37-86.6-41.2s-20-6.4-28.6 6.4c-8.4 12.6-32.8 41.2-40.2 49.8-7.4 8.4-14.8 9.6-27.4 3.2s-53.6-19.8-102-63c-37.6-33.6-63.2-75.2-70.6-87.8s-0.8-19.6 5.6-25.8c5.8-5.6 12.6-14.8 19-22.2s8.4-12.6 12.6-21.2c4.2-8.4 2.2-15.8-1-22.2s-28.6-68.8-39-94.2c-10.2-24.8-20.8-21.4-28.6-21.8-7.4-0.4-15.8-0.4-24.2-0.4s-22.2 3.2-33.8 15.8c-11.6 12.6-44.4 43.4-44.4 105.8s45.4 122.6 51.8 131.2c6.4 8.4 89.4 136.6 216.6 191.4 30.2 13 53.8 20.8 72.2 26.8 30.4 9.6 58 8.2 79.8 5 24.4-3.6 75-30.6 85.6-60.2s10.6-55 7.4-60.2c-3-5.6-11.4-8.8-24.2-15.2z"
+                        ></path>
+                      </svg>
+                    </a>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="home-main">
+          <div class="home-hero section-container">
+            <div class="home-max-width max-content-container">
+              <div class="home-content-container">
+                <h1 class="home-text heading1">
+                  <span>vamos manter as coisas</span>
+                  <br class="home-text02" />
+                  <span class="home-text03">organizadas</span>
+                </h1>
+                <span class="home-text04">
+                  ENTRE EM CONTATO CONOSCO E AGENDE UM DIAGNÓSTICO
+                </span>
+                <div class="home-btns-container">
+                  <a
+                    href="https://wa.me/558698219142"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="home-secondary button button-outline button-lg-border"
+                  >
+                    whatsapp
+                  </a>
+                </div>
+              </div>
+              <div class="home-video-container">
+                <img
+                  alt="image"
+                  src="public/playground_assets/negocio-1000w.jpg"
+                  class="home-image"
+                />
+              </div>
+            </div>
+            <div class="home-blue-background"></div>
+          </div>
+          <div class="home-numbers-banner section-container">
+            <div class="home-container01 max-content-container">
+              <div class="home-heading-container">
+                <h1 class="home-text05">empresa com experiência no mercado</h1>
+              </div>
+              <div class="home-numbers-container">
+                <div class="numbers-card-numbers-card">
+                  <img
+                    alt="image"
+                    src="public/playground_assets/interface%20time%20reset-200h.png"
+                    class="numbers-card-image"
+                  />
+                  <span class="numbers-card-number"><span>+3000</span></span>
+                  <span class="numbers-card-text">
+                    <span>Horas atendidas</span>
+                  </span>
+                </div>
+                <div class="numbers-card-numbers-card">
+                  <img
+                    alt="image"
+                    src="public/playground_assets/interface%20calendar%20favorite-200h.png"
+                    class="numbers-card-image"
+                  />
+                  <span class="numbers-card-number"><span>+8</span></span>
+                  <span class="numbers-card-text">
+                    <span>Anos no mercado</span>
+                  </span>
+                </div>
+                <div class="numbers-card-numbers-card">
+                  <img
+                    alt="image"
+                    src="public/playground_assets/shopping%20bag%20suit%20case-200h.png"
+                    class="numbers-card-image"
+                  />
+                  <span class="numbers-card-number"><span>+200</span></span>
+                  <span class="numbers-card-text">
+                    <span>Empresas atendidas</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-agenda section-container">
+            <div class="home-max-width1 max-content-container">
+              <div class="home-max-width2 max-content-container">
+                <div class="home-heading-container1">
+                  <h1 id="sobre" class="home-text06 heading2">quem somos</h1>
+                  <span class="home-text07">
+                    MAIS DE 8 ANOS DESENVOLVENDO NEGÓCIOS E TRANSFORMANDO VIDAS.
+                    NÃO SÓ UM APOIO NA CRIAÇÃO DE IDEIAS E GESTÃO, UM BRAÇO ÁGIL
+                    E TRANSFORMADOR. SOMOS UM TIME DE CONSULTORES EMPRESARIAIS
+                    COM FOCO NA ENTREGA E INSERIDA NO CENÁRIO DE INOVAÇÃO E DE
+                    BUSCA PELO RESULTADO. NOSSA MISSÃO É CAPACITAR O
+                    EMPREENDEDOR PARA DECISÕES MAIS ASSERTIVAS E ESTRATÉGICAS,
+                    CAPAZES DE POTENCIALIZAR O RESULTADO DE SEUS NEGÓCIOS E
+                    GARANTIR SUCESSO, POSITIVIDADE E A CONTINUIDADE DE SUAS
+                    OPERAÇÕES, ATRAVÉS DE CONSULTORIAS, MENTORIAS E
+                    TREINAMENTOS.
+                  </span>
+                </div>
+              </div>
+              <div class="home-events-container">
+                <div class="home-column">
+                  <div class="home-column-header">
+                    <span class="home-text08">nosso time positive</span>
+                    <div class="home-line"></div>
+                  </div>
+                  <div class="event-card-event-card">
+                    <img
+                      alt="image"
+                      src="./public/playground_assets/ana paula-200h.jpeg"
+                      class="event-card-image"
+                    />
+                    <div class="event-card-vertical-line"></div>
+                    <div class="event-card-container">
+                      <span class="event-card-title">
+                        <span>Ana paula</span>
+                      </span>
+                      <span class="event-card-text">
+                        <span>
+                          Administradora, consultora, mentora e treinadora com
+                          foco em empreendedorismo, comportamento empreendedor,
+                          vendas e inovação.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="event-card-event-card">
+                    <img
+                      alt="image"
+                      src="./public/playground_assets/ana suelen-200h.jpeg"
+                      class="event-card-image"
+                    />
+                    <div class="event-card-vertical-line"></div>
+                    <div class="event-card-container">
+                      <span class="event-card-title">
+                        <span>Ana suellen</span>
+                      </span>
+                      <span class="event-card-text">
+                        <span>
+                          Consultora empresarial e instrutora na área de Gestão
+                          de Pessoas, Inovação e Empreendedorismo.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="event-card-event-card">
+                    <img
+                      alt="image"
+                      src="./public/playground_assets/jairo-200h.jpeg"
+                      class="event-card-image"
+                    />
+                    <div class="event-card-vertical-line"></div>
+                    <div class="event-card-container">
+                      <span class="event-card-title">
+                        <span>Jairo Carlos</span>
+                      </span>
+                      <span class="event-card-text">
+                        <span>
+                          Consultor em inovação com énfase em propriedade
+                          intelectual.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-column1">
+                  <div class="home-column-header1">
+                    <span class="home-text09">.</span>
+                    <div class="home-line1"></div>
+                  </div>
+                  <div class="event-card-event-card">
+                    <img
+                      alt="image"
+                      src="./public/playground_assets/rubens-200h.jpeg"
+                      class="event-card-image"
+                    />
+                    <div class="event-card-vertical-line"></div>
+                    <div class="event-card-container">
+                      <span class="event-card-title">
+                        <span>Rubens Rodrigues</span>
+                      </span>
+                      <span class="event-card-text">
+                        <span>
+                          Analista e desenvolvedor WEB Atuando com transformação
+                          digital. Instrutor com foco em Empreendedorismo e
+                          Perfis comportamentais.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="event-card-event-card">
+                    <img
+                      alt="image"
+                      src="./public/playground_assets/adriana-200h.jpeg"
+                      class="event-card-image"
+                    />
+                    <div class="event-card-vertical-line"></div>
+                    <div class="event-card-container">
+                      <span class="event-card-title">
+                        <span>Adriana Alves</span>
+                      </span>
+                      <span class="event-card-text">
+                        <span>
+                          Administradora e professora, com foco de atuação em
+                          Educação Empreendedora e E-commerce.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="event-card-event-card">
+                    <img
+                      alt="image"
+                      src="./public/playground_assets/allyson.jpeg"
+                      class="event-card-image"
+                    />
+                    <div class="event-card-vertical-line"></div>
+                    <div class="event-card-container">
+                      <span class="event-card-title">
+                        <span>Allyson henrique</span>
+                      </span>
+                      <span class="event-card-text">
+                        <span>
+                          Analista com foco em levantamento e análise de dados.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-workshops">
+            <div class="home-content-container1">
+              <div class="home-container02">
+                <h1 class="home-text10 heading2">
+                  <span>faça um diagnóstico</span>
+                  <br />
+                  <span class="home-text13">empresarial</span>
+                  <br />
+                </h1>
+                <span class="home-text15">
+                  receba uma devolutiva grátis para a sua empresa.
+                </span>
+                <span class="home-text16">
+                  Responda o formulário que iremos analisar e retornar com uma
+                  devolutiva totalmente gratuíta.
+                </span>
+                <button class="button button-md button-outline">
+                  <a
+                    href="https://forms.gle/qMJzUKxHR9R4wmBb8"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="home-link"
+                  >
+                    <span>diagnóstico</span>
+                    <br />
+                  </a>
+                </button>
+              </div>
+            </div>
+            <img
+              alt="image"
+              src="public/playground_assets/diagnostico-1500h.jpg"
+              class="home-image1"
+            />
+          </div>
+          <div class="home-previous-events section-container">
+            <div class="home-max-width3 max-content-container">
+              <div class="home-heading-container2">
+                <h1 class="home-text19">nossos produtos</h1>
+              </div>
+            </div>
+            <div data-type="slider" class="home-slider">
+              <div
+                data-type="slide"
+                class="slide-slide slide slide-root-class-name4"
+              >
+                <div class="slide-max-wdith max-content-container">
+                </div>
+              </div>
+              <div
+                data-type="slide"
+                class="slide-slide slide slide-root-class-name1"
+              >
+                <div class="slide-max-wdith max-content-container">
+                </div>
+              </div>
+              <div
+                data-type="slide"
+                class="slide-slide slide slide-root-class-name"
+              >
+                <div class="slide-max-wdith max-content-container">
+                </div>
+              </div>
+              <div
+                data-type="slide"
+                class="slide-slide slide slide-root-class-name3"
+              >
+                <div class="slide-max-wdith max-content-container">
+                </div>
+              </div>
+              <div
+                data-type="slide"
+                class="slide-slide slide slide-root-class-name2"
+              >
+                <div class="slide-max-wdith max-content-container">
+                </div>
+              </div>
+            </div>
+            <div class="home-slider-controls">
+              <div data-action="previousSlide" class="home-go-left">
+                <svg viewBox="0 0 1024 1024" class="home-icon">
+                  <path
+                    d="M250 176l92-90 426 426-426 426-92-90 338-336z"
+                  ></path>
+                </svg>
+              </div>
+              <div data-action="nextSlide" class="home-go-right">
+                <svg viewBox="0 0 1024 1024" class="home-icon2">
+                  <path
+                    d="M250 176l92-90 426 426-426 426-92-90 338-336z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </main>
+        <div id="produtos" class="home-pricing">
+          <div class="home-container03">
+            <div class="home-pricing-card">
+              <span class="home-text20">descubra seu cliente ideal</span>
+              <div class="home-container04">
+                <span class="home-text21">
+                  ✔&nbsp;O QUE É, COMO DESCOBRIR, FERRAMENTAS, PERSONA, COMO
+                  UTILIZAR NA A COMUNICAÇÃO NA ESTRATÉGIA DE MARKETING E NO
+                  DIRECIONAMENTO DA EMPRESA.
+                </span>
+              </div>
+              <a
+                href="https://wa.me/558698219142"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link1 button"
+              >
+                Saber mais
+              </a>
+            </div>
+            <div class="home-pricing-card1">
+              <span class="home-text22">inovação</span>
+              <div class="home-container05">
+                <span class="home-text23">✔ propriedade intelectual</span>
+                <span class="home-text24">✔ modelagem de negócio</span>
+                <span class="home-text25">✔ e-commerce</span>
+                <span class="home-text26">✔ transformação digital</span>
+              </div>
+              <span class="home-text27">marketing e vendas</span>
+              <div class="home-container06">
+                <span class="home-text28">✔atendimento ao cliente</span>
+                <span class="home-text29">✔ marketing digital</span>
+                <span class="home-text30">✔ vendas</span>
+              </div>
+              <a
+                href="https://wa.me/558698219142"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link2 button"
+              >
+                <span>
+                  <span>Saber mais</span>
+                  <br />
+                </span>
+              </a>
+            </div>
+            <div class="home-pricing-card2">
+              <span class="home-text34">
+                <span class="home-text35">
+                  inteligência emocional no trabalho
+                </span>
+                <br />
+              </span>
+              <div class="home-container07">
+                <span class="home-text37">
+                  ✔&nbsp;A INTELIGÊNCIA EMOCIONAL IMPACTA NO EQUILÍBRIO DAS
+                  RELAÇÕES, NA QUALIDADE DE VIDA DAQUELES QUE A DESENVOLVEM E NO
+                  PODER DE TOMADA DE DECISÃO.
+                </span>
+              </div>
+              <a
+                href="https://wa.me/558698219142"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link3 button"
+              >
+                Saber mais
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="home-pricing1">
+          <div class="home-container08">
+            <div class="home-pricing-card3">
+              <span class="home-text38">alavanque seu negócio mulher</span>
+              <div class="home-container09">
+                <span class="home-text39">
+                  ✔&nbsp;DELEGAR FUNÇÕES, ORGANIZAÇÃO INTERNA, CONTRATAÇÃO DE
+                  FUNCIONÁRIOS, AUTONOMIA, LIDERANÇA, PROCESSOS, NEGÓCIOS
+                  ESCALÁVEIS E MODELO DE NEGÓCIO.
+                </span>
+              </div>
+              <a
+                href="https://wa.me/558698219142"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link4 button"
+              >
+                saber mais
+              </a>
+            </div>
+            <div class="home-pricing-card4">
+              <span class="home-text40">
+                <span>e-book</span>
+                <br />
+                <span>ser empreendedora</span>
+                <br />
+              </span>
+              <div class="home-container10">
+                <span class="home-text45">
+                  ✔&nbsp;PASSOS PARA EMPREENDER SUA IDEIA, AUXILIANDO NO
+                  DESENVOLVIMENTO E RESGATE DE RECURSOS PARA REALIZAÇÃO DE SEUS
+                  PROJETOS.
+                </span>
+              </div>
+              <a
+                href="https://ebook.positiveempresarial.com.br"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link5 button"
+              >
+                conhecer e-book
+              </a>
+            </div>
+            <div class="home-pricing-card5">
+              <span class="home-text46">
+                <span>planner</span>
+                <br />
+                <span>positive-se mulher</span>
+                <br />
+              </span>
+              <div class="home-container11">
+                <span class="home-text51">
+                  ✔&nbsp;PARA AUMENTAR A ORGANIZAÇÃO E A PRODUTIVIDADE DA
+                  EMPREENDEDORA, PARA MULHERES QUE PRECISA DE FERRAMENTAS DE
+                  ORGANIZAÇÃO PARA SEU DIA A DIA.
+                </span>
+              </div>
+              <a
+                href="https://plannerpm.positiveempresarial.com.br"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link6 button"
+              >
+                conhecer planner
+              </a>
+            </div>
+          </div>
+        </div>
+        <footer id="contatos" class="footer-footer section-container footer-root-class-name">
+          <div class="footer-max-width max-content-container">
+            <div class="footer-bottom-container">
+              <div class="footer-left-side">
+                <img
+                  alt="image"
+                  src="public/playground_assets/logo-200w.jpeg"
+                  class="footer-image"
+                />
+                <span class="footer-text">
+                  <span class="footer-text01">
+                    A&amp;A Positive&nbsp; Solução Empresariaal
+                  </span>
+                  <br />
+                  <span>CNPJ 20.925.744/0001-21</span>
+                </span>
+                <div class="footer-social-media">
+                  <span class="footer-text04">nossas redes sociais</span>
+                  <div class="footer-container">
+                    <a
+                      href="https://www.instagram.com/positive.group"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link"
+                    >
+                      <svg viewBox="0 0 1024 1024" class="footer-icon">
+                        <path
+                          d="M512 92.2c136.8 0 153 0.6 206.8 3 50 2.2 77 10.6 95 17.6 23.8 9.2 41 20.4 58.8 38.2 18 18 29 35 38.4 58.8 7 18 15.4 45.2 17.6 95 2.4 54 3 70.2 3 206.8s-0.6 153-3 206.8c-2.2 50-10.6 77-17.6 95-9.2 23.8-20.4 41-38.2 58.8-18 18-35 29-58.8 38.4-18 7-45.2 15.4-95 17.6-54 2.4-70.2 3-206.8 3s-153-0.6-206.8-3c-50-2.2-77-10.6-95-17.6-23.8-9.2-41-20.4-58.8-38.2-18-18-29-35-38.4-58.8-7-18-15.4-45.2-17.6-95-2.4-54-3-70.2-3-206.8s0.6-153 3-206.8c2.2-50 10.6-77 17.6-95 9.2-23.8 20.4-41 38.2-58.8 18-18 35-29 58.8-38.4 18-7 45.2-15.4 95-17.6 53.8-2.4 70-3 206.8-3zM512 0c-139 0-156.4 0.6-211 3-54.4 2.4-91.8 11.2-124.2 23.8-33.8 13.2-62.4 30.6-90.8 59.2-28.6 28.4-46 57-59.2 90.6-12.6 32.6-21.4 69.8-23.8 124.2-2.4 54.8-3 72.2-3 211.2s0.6 156.4 3 211c2.4 54.4 11.2 91.8 23.8 124.2 13.2 33.8 30.6 62.4 59.2 90.8 28.4 28.4 57 46 90.6 59 32.6 12.6 69.8 21.4 124.2 23.8 54.6 2.4 72 3 211 3s156.4-0.6 211-3c54.4-2.4 91.8-11.2 124.2-23.8 33.6-13 62.2-30.6 90.6-59s46-57 59-90.6c12.6-32.6 21.4-69.8 23.8-124.2 2.4-54.6 3-72 3-211s-0.6-156.4-3-211c-2.4-54.4-11.2-91.8-23.8-124.2-12.6-34-30-62.6-58.6-91-28.4-28.4-57-46-90.6-59-32.6-12.6-69.8-21.4-124.2-23.8-54.8-2.6-72.2-3.2-211.2-3.2v0z"
+                        ></path>
+                        <path
+                          d="M512 249c-145.2 0-263 117.8-263 263s117.8 263 263 263 263-117.8 263-263c0-145.2-117.8-263-263-263zM512 682.6c-94.2 0-170.6-76.4-170.6-170.6s76.4-170.6 170.6-170.6c94.2 0 170.6 76.4 170.6 170.6s-76.4 170.6-170.6 170.6z"
+                        ></path>
+                        <path
+                          d="M846.8 238.6c0 33.91-27.49 61.4-61.4 61.4s-61.4-27.49-61.4-61.4c0-33.91 27.49-61.4 61.4-61.4s61.4 27.49 61.4 61.4z"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://wa.me/558698219142"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link1"
+                    >
+                      <svg viewBox="0 0 1024 1024" class="footer-icon4">
+                        <path
+                          d="M873 148.8c-95.8-96-223.2-148.8-359-148.8-279.6 0-507.2 227.6-507.2 507.4 0 89.4 23.4 176.8 67.8 253.6l-72 263 269-70.6c74.2 40.4 157.6 61.8 242.4 61.8h0.2c0 0 0 0 0 0 279.6 0 507.4-227.6 507.4-507.4 0-135.6-52.8-263-148.6-359zM514.2 929.6v0c-75.8 0-150-20.4-214.8-58.8l-15.4-9.2-159.6 41.8 42.6-155.6-10-16c-42.4-67-64.6-144.6-64.6-224.4 0-232.6 189.2-421.8 422-421.8 112.6 0 218.6 44 298.2 123.6 79.6 79.8 123.4 185.6 123.4 298.4-0.2 232.8-189.4 422-421.8 422zM745.4 613.6c-12.6-6.4-75-37-86.6-41.2s-20-6.4-28.6 6.4c-8.4 12.6-32.8 41.2-40.2 49.8-7.4 8.4-14.8 9.6-27.4 3.2s-53.6-19.8-102-63c-37.6-33.6-63.2-75.2-70.6-87.8s-0.8-19.6 5.6-25.8c5.8-5.6 12.6-14.8 19-22.2s8.4-12.6 12.6-21.2c4.2-8.4 2.2-15.8-1-22.2s-28.6-68.8-39-94.2c-10.2-24.8-20.8-21.4-28.6-21.8-7.4-0.4-15.8-0.4-24.2-0.4s-22.2 3.2-33.8 15.8c-11.6 12.6-44.4 43.4-44.4 105.8s45.4 122.6 51.8 131.2c6.4 8.4 89.4 136.6 216.6 191.4 30.2 13 53.8 20.8 72.2 26.8 30.4 9.6 58 8.2 79.8 5 24.4-3.6 75-30.6 85.6-60.2s10.6-55 7.4-60.2c-3-5.6-11.4-8.8-24.2-15.2z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <form class="footer-form" action="https://formsubmit.co/contato@positiveempresarial.com.br " method="POST">
+                <label class="footer-text05">
+                  <span>Digite seu nome</span>
+                </label>
+                <input
+                  type="text"
+                  name="nome"
+                  placeholder="Escreva seu nome aqui"
+                  required=""
+                  class="footer-textinput input"
+                />
+                <label class="footer-text06">
+                  <span>Digite seu telefone</span>
+                </label>
+                <input
+                  type="number"
+                  name="numero"
+                  placeholder="Escreva seu telefone aqui"
+                  required=""
+                  class="footer-textinput1 input"
+                />
+                <label class="footer-text07">
+                  <span>Digite um email válido</span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Escreva um email válido"
+                  required=""
+                  class="footer-textinput2 input"
+                />
+                <label class="footer-text08">
+                  <span>Deixe sua mensagem</span>
+                </label>
+                <textarea
+                  placeholder="Deixe sua mensagem aqui"
+                  class="footer-textarea textarea"
+                  name="mensagem"
+                ></textarea>
+                <button type="submit" class="footer-button button">
+                  <span>Enviar</span>
+                </button>
+              </form>
+            </div>
+            <div class="footer-copyright">
+              <span class="footer-text09">
+                &nbsp;© 2022 Todos os direitos reservados . Desenvolvido por
+                Rubens Rodrigues
+              </span>
+              <a
+                href="./politicaPrivacidade.html"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="footer-link2"
+              >
+                <span>Política de privacidade</span>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+    <script>
+      window.onload = () => {
+        const runAllScripts = () => {
+          initializeAllSliders();
+        };
+
+        const listenForUrlChanges = () => {
+          let url = location.href;
+          document.body.addEventListener(
+            "click",
+            () => {
+              requestAnimationFrame(() => {
+                if (url !== location.href) {
+                  runAllScripts();
+                  url = location.href;
+                }
+              });
+            },
+            true
+          );
+        };
+
+        const initializeAllSliders = () => {
+          const allSliders = document.querySelectorAll('[data-type="slider"]');
+          allSliders.forEach((slider) => {
+            initializeSlider(slider);
+          });
+        };
+
+        const initializeSlider = (slider) => {
+          const slides = slider.querySelectorAll('[data-type="slide"]');
+          const middle = Math.ceil(slides.length / 2);
+          let currentSlide = middle;
+
+          const nextSlideBtns = document.querySelectorAll(
+            '[data-action="nextSlide"]'
+          );
+          const previousSlideBtns = document.querySelectorAll(
+            '[data-action="previousSlide"]'
+          );
+
+          const changeSlide = (slideIndex, action) => {
+            currentSlide = slideIndex;
+
+            switch (action) {
+              case "next":
+                slideIndex === slides.length
+                  ? (currentSlide = 1)
+                  : currentSlide++;
+                break;
+              case "previous":
+                slideIndex === 1
+                  ? (currentSlide = slides.length)
+                  : currentSlide--;
+            }
+
+            const slide = slides[0];
+            if (!slide) {
+              console.error("No slides present");
+              return;
+            }
+            const style = window.getComputedStyle(slide);
+            slideWidth =
+              parseInt(style.width) +
+              parseInt(style.marginLeft) +
+              parseInt(style.marginRight);
+            const transformValue = -slideWidth * (currentSlide - middle);
+
+            slider.style.transform = `translateX(${transformValue}px)`;
+          };
+
+          previousSlideBtns.forEach((btn) => {
+            btn.addEventListener("click", () =>
+              changeSlide(currentSlide, "previous")
+            );
+          });
+
+          nextSlideBtns.forEach((btn) => {
+            btn.addEventListener("click", () =>
+              changeSlide(currentSlide, "next")
+            );
+          });
+        };
+
+        runAllScripts();
+      };
+    </script>
+  </body>
+</html>
